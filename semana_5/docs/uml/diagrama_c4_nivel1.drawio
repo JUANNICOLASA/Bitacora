@@ -1,0 +1,195 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="UdxBt4hFje-SibYrxoWl">
+    <mxGraphModel dx="1446" dy="784" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" plantUmlData="{&#xa;  &quot;data&quot;: &quot;@startuml\n!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml\n\ntitle Diagrama C4 Nivel 1: Contexto del Sistema - TECH CUP FÚTBOL\n\n&#39; Actores (Personas)\nPerson(estudiante, \&quot;Estudiante / Jugador\&quot;, \&quot;Registro, perfil deportivo, búsqueda de equipo, consulta de resultados y estadísticas.\&quot;)\nPerson(capitan, \&quot;Capitán\&quot;, \&quot;Crea y administra el equipo, gestiona inscripción, alineaciones y jugadores.\&quot;)\nPerson(arbitro, \&quot;Árbitro\&quot;, \&quot;Gestiona el partido en vivo: tiempo, goles, tarjetas y sustituciones.\&quot;)\nPerson(organizador, \&quot;Organizador\&quot;, \&quot;Crea torneos, aprueba inscripciones, gestiona árbitros y ve el dashboard.\&quot;)\nPerson(familiar, \&quot;Graduado / Familiar\&quot;, \&quot;Se registra con correo Gmail y puede participar como jugador o capitán.\&quot;)\n\n&#39; Sistema Central\nSystem(techcup, \&quot;TECH CUP FÚTBOL\&quot;, \&quot;Plataforma web centralizada que gestiona el ciclo completo del torneo semestral.\&quot;)\n\n&#39; Sistemas Externos\nSystem_Ext(smtp, \&quot;Servidor de correo (SMTP)\&quot;, \&quot;Envío de códigos OTP para registro, login y acciones sensibles.\&quot;)\nSystem_Ext(mapas, \&quot;Servicio de mapas\&quot;, \&quot;Muestra ubicación de canchas en el campus.\&quot;)\nSystem_Ext(archivos, \&quot;Almacenamiento de archivos\&quot;, \&quot;Guarda fotos de perfil, escudos de equipo y comprobantes de pago.\&quot;)\n\n&#39; Relaciones - Actores hacia el sistema\nRel(estudiante, techcup, \&quot;Interactúa con\&quot;)\nRel(capitan, techcup, \&quot;Gestiona equipos y alineaciones en\&quot;)\nRel(arbitro, techcup, \&quot;Registra eventos en vivo en\&quot;)\nRel(organizador, techcup, \&quot;Administra el torneo en\&quot;)\nRel(familiar, techcup, \&quot;Participa en\&quot;)\n\n&#39; Relaciones - Sistema hacia externos\nRel(techcup, smtp, \&quot;Envía correos mediante\&quot;)\nRel(techcup, mapas, \&quot;Obtiene ubicaciones de\&quot;)\nRel(techcup, archivos, \&quot;Almacena multimedia en\&quot;)\n\nSHOW_LEGEND()\n@enduml&quot;,&#xa;  &quot;config&quot;: null&#xa;}" id="ZhNegsUgQYoRMtf_w5oP-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Diagrama C4 Nivel 1: Contexto del Sistema - TECH CUP FÚTBOL" plantUmlId="c4title_0" plantUmlBaseStyle="rounded=0;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" plantUmlBaseValue="Diagrama C4 Nivel 1: Contexto del Sistema - TECH CUP FÚTBOL" id="ZhNegsUgQYoRMtf_w5oP-2">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="rounded=0;fillColor=none;strokeColor=none;fontSize=14;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;" vertex="1">
+            <mxGeometry height="24" width="1208" x="30" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«person»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:36px;&quot;&gt;&amp;#160;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Estudiante / Jugador&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Registro, perfil deportivo, búsqueda de equipo, consulta de resultados y estadísticas." plantUmlId="c4_1" plantUmlBaseStyle="rounded=0;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" plantUmlBaseValue="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«person»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:36px;&quot;&gt;&amp;#160;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Estudiante / Jugador&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Registro, perfil deportivo, búsqueda de equipo, consulta de resultados y estadísticas." id="ZhNegsUgQYoRMtf_w5oP-3">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" vertex="1">
+            <mxGeometry height="182" width="214" x="30" y="74" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="c4sp_2" plantUmlBaseStyle="ellipse;fillColor=#FFFFFF;strokeColor=none;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-4">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-3" style="ellipse;fillColor=#FFFFFF;strokeColor=none;" vertex="1">
+            <mxGeometry height="18" width="18" x="98" y="28" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="c4sp_3" plantUmlBaseStyle="rounded=1;arcSize=50;fillColor=#FFFFFF;strokeColor=none;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-5">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-3" style="rounded=1;arcSize=50;fillColor=#FFFFFF;strokeColor=none;" vertex="1">
+            <mxGeometry height="24" width="34" x="90" y="48" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«person»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:36px;&quot;&gt;&amp;#160;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Capitán&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Crea y administra el equipo, gestiona inscripción, alineaciones y jugadores." plantUmlId="c4_4" plantUmlBaseStyle="rounded=0;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" plantUmlBaseValue="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«person»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:36px;&quot;&gt;&amp;#160;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Capitán&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Crea y administra el equipo, gestiona inscripción, alineaciones y jugadores." id="ZhNegsUgQYoRMtf_w5oP-6">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" vertex="1">
+            <mxGeometry height="182" width="200" x="289" y="74" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="c4sp_5" plantUmlBaseStyle="ellipse;fillColor=#FFFFFF;strokeColor=none;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-7">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-6" style="ellipse;fillColor=#FFFFFF;strokeColor=none;" vertex="1">
+            <mxGeometry height="18" width="18" x="91" y="28" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="c4sp_6" plantUmlBaseStyle="rounded=1;arcSize=50;fillColor=#FFFFFF;strokeColor=none;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-8">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-6" style="rounded=1;arcSize=50;fillColor=#FFFFFF;strokeColor=none;" vertex="1">
+            <mxGeometry height="24" width="34" x="83" y="48" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«person»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:36px;&quot;&gt;&amp;#160;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Árbitro&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Gestiona el partido en vivo: tiempo, goles, tarjetas y sustituciones." plantUmlId="c4_7" plantUmlBaseStyle="rounded=0;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" plantUmlBaseValue="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«person»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:36px;&quot;&gt;&amp;#160;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Árbitro&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Gestiona el partido en vivo: tiempo, goles, tarjetas y sustituciones." id="ZhNegsUgQYoRMtf_w5oP-9">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" vertex="1">
+            <mxGeometry height="182" width="196" x="534" y="74" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="c4sp_8" plantUmlBaseStyle="ellipse;fillColor=#FFFFFF;strokeColor=none;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-10">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-9" style="ellipse;fillColor=#FFFFFF;strokeColor=none;" vertex="1">
+            <mxGeometry height="18" width="18" x="89" y="28" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="c4sp_9" plantUmlBaseStyle="rounded=1;arcSize=50;fillColor=#FFFFFF;strokeColor=none;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-11">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-9" style="rounded=1;arcSize=50;fillColor=#FFFFFF;strokeColor=none;" vertex="1">
+            <mxGeometry height="24" width="34" x="81" y="48" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«person»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:36px;&quot;&gt;&amp;#160;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Organizador&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Crea torneos, aprueba inscripciones, gestiona árbitros y ve el dashboard." plantUmlId="c4_10" plantUmlBaseStyle="rounded=0;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" plantUmlBaseValue="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«person»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:36px;&quot;&gt;&amp;#160;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Organizador&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Crea torneos, aprueba inscripciones, gestiona árbitros y ve el dashboard." id="ZhNegsUgQYoRMtf_w5oP-12">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" vertex="1">
+            <mxGeometry height="182" width="191" x="775" y="74" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="c4sp_11" plantUmlBaseStyle="ellipse;fillColor=#FFFFFF;strokeColor=none;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-13">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-12" style="ellipse;fillColor=#FFFFFF;strokeColor=none;" vertex="1">
+            <mxGeometry height="18" width="18" x="86.5" y="28" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="c4sp_12" plantUmlBaseStyle="rounded=1;arcSize=50;fillColor=#FFFFFF;strokeColor=none;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-14">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-12" style="rounded=1;arcSize=50;fillColor=#FFFFFF;strokeColor=none;" vertex="1">
+            <mxGeometry height="24" width="34" x="78.5" y="48" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«person»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:36px;&quot;&gt;&amp;#160;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Graduado / Familiar&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Se registra con correo Gmail y puede participar como jugador o capitán." plantUmlId="c4_13" plantUmlBaseStyle="rounded=0;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" plantUmlBaseValue="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«person»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:36px;&quot;&gt;&amp;#160;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Graduado / Familiar&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Se registra con correo Gmail y puede participar como jugador o capitán." id="ZhNegsUgQYoRMtf_w5oP-15">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#08427B;strokeColor=#073B6F;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" vertex="1">
+            <mxGeometry height="182" width="227" x="1011" y="74" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="c4sp_14" plantUmlBaseStyle="ellipse;fillColor=#FFFFFF;strokeColor=none;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-16">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-15" style="ellipse;fillColor=#FFFFFF;strokeColor=none;" vertex="1">
+            <mxGeometry height="18" width="18" x="104.5" y="28" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="c4sp_15" plantUmlBaseStyle="rounded=1;arcSize=50;fillColor=#FFFFFF;strokeColor=none;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-17">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-15" style="rounded=1;arcSize=50;fillColor=#FFFFFF;strokeColor=none;" vertex="1">
+            <mxGeometry height="24" width="34" x="96.5" y="48" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«system»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;TECH CUP FÚTBOL&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Plataforma web centralizada que gestiona el ciclo completo del torneo semestral." plantUmlId="c4_16" plantUmlBaseStyle="rounded=0;html=1;whiteSpace=wrap;fillColor=#1168BD;strokeColor=#3C7FC0;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" plantUmlBaseValue="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«system»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;TECH CUP FÚTBOL&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Plataforma web centralizada que gestiona el ciclo completo del torneo semestral." id="ZhNegsUgQYoRMtf_w5oP-18">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#1168BD;strokeColor=#3C7FC0;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" vertex="1">
+            <mxGeometry height="134" width="231" x="518.5" y="346" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«system»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Servidor de correo (SMTP)&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Envío de códigos OTP para registro, login y acciones sensibles." plantUmlId="c4_17" plantUmlBaseStyle="rounded=0;html=1;whiteSpace=wrap;fillColor=#999999;strokeColor=#8A8A8A;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" plantUmlBaseValue="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«system»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Servidor de correo (SMTP)&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Envío de códigos OTP para registro, login y acciones sensibles." id="ZhNegsUgQYoRMtf_w5oP-19">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#999999;strokeColor=#8A8A8A;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" vertex="1">
+            <mxGeometry height="156" width="194" x="273.5" y="570" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«system»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Servicio de mapas&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Muestra ubicación de canchas en el campus." plantUmlId="c4_18" plantUmlBaseStyle="rounded=0;html=1;whiteSpace=wrap;fillColor=#999999;strokeColor=#8A8A8A;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" plantUmlBaseValue="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«system»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Servicio de mapas&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Muestra ubicación de canchas en el campus." id="ZhNegsUgQYoRMtf_w5oP-20">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#999999;strokeColor=#8A8A8A;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" vertex="1">
+            <mxGeometry height="115" width="218" x="512.5" y="570" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«system»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Almacenamiento de archivos&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Guarda fotos de perfil, escudos de equipo y comprobantes de pago." plantUmlId="c4_19" plantUmlBaseStyle="rounded=0;html=1;whiteSpace=wrap;fillColor=#999999;strokeColor=#8A8A8A;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" plantUmlBaseValue="&lt;font style=&quot;font-size:12px;&quot;&gt;&lt;i&gt;«system»&lt;/i&gt;&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px;&quot;&gt;&lt;b&gt;Almacenamiento de archivos&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;br&gt;Guarda fotos de perfil, escudos de equipo y comprobantes de pago." id="ZhNegsUgQYoRMtf_w5oP-21">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="rounded=0;html=1;whiteSpace=wrap;fillColor=#999999;strokeColor=#8A8A8A;fontColor=#FFFFFF;strokeWidth=0.5;fontSize=14;verticalAlign=top;spacingTop=6;" vertex="1">
+            <mxGeometry height="156" width="219" x="775.5" y="570" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_20" plantUmlBaseStyle="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-22">
+          <mxCell edge="1" parent="ZhNegsUgQYoRMtf_w5oP-1" source="ZhNegsUgQYoRMtf_w5oP-3" style="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;rounded=0;" target="ZhNegsUgQYoRMtf_w5oP-18">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_21" plantUmlBaseStyle="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-23">
+          <mxCell edge="1" parent="ZhNegsUgQYoRMtf_w5oP-1" source="ZhNegsUgQYoRMtf_w5oP-6" style="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;rounded=0;" target="ZhNegsUgQYoRMtf_w5oP-18">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_22" plantUmlBaseStyle="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-24">
+          <mxCell edge="1" parent="ZhNegsUgQYoRMtf_w5oP-1" source="ZhNegsUgQYoRMtf_w5oP-9" style="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;rounded=0;" target="ZhNegsUgQYoRMtf_w5oP-18">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_23" plantUmlBaseStyle="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-25">
+          <mxCell edge="1" parent="ZhNegsUgQYoRMtf_w5oP-1" source="ZhNegsUgQYoRMtf_w5oP-12" style="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;rounded=0;" target="ZhNegsUgQYoRMtf_w5oP-18">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_24" plantUmlBaseStyle="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-26">
+          <mxCell edge="1" parent="ZhNegsUgQYoRMtf_w5oP-1" source="ZhNegsUgQYoRMtf_w5oP-15" style="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;rounded=0;" target="ZhNegsUgQYoRMtf_w5oP-18">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_25" plantUmlBaseStyle="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-27">
+          <mxCell edge="1" parent="ZhNegsUgQYoRMtf_w5oP-1" source="ZhNegsUgQYoRMtf_w5oP-18" style="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;rounded=0;" target="ZhNegsUgQYoRMtf_w5oP-19">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_26" plantUmlBaseStyle="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-28">
+          <mxCell edge="1" parent="ZhNegsUgQYoRMtf_w5oP-1" source="ZhNegsUgQYoRMtf_w5oP-18" style="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;rounded=0;" target="ZhNegsUgQYoRMtf_w5oP-20">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" plantUmlId="rel_27" plantUmlBaseStyle="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;" plantUmlBaseValue="" id="ZhNegsUgQYoRMtf_w5oP-29">
+          <mxCell edge="1" parent="ZhNegsUgQYoRMtf_w5oP-1" source="ZhNegsUgQYoRMtf_w5oP-18" style="endArrow=block;endFill=1;endSize=5;html=1;strokeColor=#666666;fontColor=#666666;fontSize=12;fontStyle=1;curved=1;rounded=0;" target="ZhNegsUgQYoRMtf_w5oP-21">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Interactúa con&lt;/b&gt;" plantUmlId="rellbl_28" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=center;verticalAlign=middle;whiteSpace=nowrap;" plantUmlBaseValue="&lt;b&gt;Interactúa con&lt;/b&gt;" id="ZhNegsUgQYoRMtf_w5oP-30">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=center;verticalAlign=middle;whiteSpace=nowrap;" vertex="1">
+            <mxGeometry height="20" width="95" x="338" y="279" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Gestiona equipos y alineaciones en&lt;/b&gt;" plantUmlId="rellbl_29" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=left;verticalAlign=middle;whiteSpace=nowrap;" plantUmlBaseValue="&lt;b&gt;Gestiona equipos y alineaciones en&lt;/b&gt;" id="ZhNegsUgQYoRMtf_w5oP-31">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=left;verticalAlign=middle;whiteSpace=nowrap;" vertex="1">
+            <mxGeometry height="20" width="223" x="307" y="279" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Registra eventos en vivo en&lt;/b&gt;" plantUmlId="rellbl_30" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=left;verticalAlign=middle;whiteSpace=nowrap;" plantUmlBaseValue="&lt;b&gt;Registra eventos en vivo en&lt;/b&gt;" id="ZhNegsUgQYoRMtf_w5oP-32">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=left;verticalAlign=middle;whiteSpace=nowrap;" vertex="1">
+            <mxGeometry height="20" width="175" x="562" y="279" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Administra el torneo en&lt;/b&gt;" plantUmlId="rellbl_31" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=left;verticalAlign=middle;whiteSpace=nowrap;" plantUmlBaseValue="&lt;b&gt;Administra el torneo en&lt;/b&gt;" id="ZhNegsUgQYoRMtf_w5oP-33">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=left;verticalAlign=middle;whiteSpace=nowrap;" vertex="1">
+            <mxGeometry height="20" width="147" x="807" y="279" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Participa en&lt;/b&gt;" plantUmlId="rellbl_32" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=center;verticalAlign=middle;whiteSpace=nowrap;" plantUmlBaseValue="&lt;b&gt;Participa en&lt;/b&gt;" id="ZhNegsUgQYoRMtf_w5oP-34">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=center;verticalAlign=middle;whiteSpace=nowrap;" vertex="1">
+            <mxGeometry height="20" width="80" x="1072" y="279" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Envía correos mediante&lt;/b&gt;" plantUmlId="rellbl_33" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=center;verticalAlign=middle;whiteSpace=nowrap;" plantUmlBaseValue="&lt;b&gt;Envía correos mediante&lt;/b&gt;" id="ZhNegsUgQYoRMtf_w5oP-35">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=center;verticalAlign=middle;whiteSpace=nowrap;" vertex="1">
+            <mxGeometry height="20" width="153" x="426" y="521" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Obtiene ubicaciones de&lt;/b&gt;" plantUmlId="rellbl_34" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=left;verticalAlign=middle;whiteSpace=nowrap;" plantUmlBaseValue="&lt;b&gt;Obtiene ubicaciones de&lt;/b&gt;" id="ZhNegsUgQYoRMtf_w5oP-36">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=left;verticalAlign=middle;whiteSpace=nowrap;" vertex="1">
+            <mxGeometry height="20" width="149" x="576" y="510" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;Almacena multimedia en&lt;/b&gt;" plantUmlId="rellbl_35" plantUmlBaseStyle="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=center;verticalAlign=middle;whiteSpace=nowrap;" plantUmlBaseValue="&lt;b&gt;Almacena multimedia en&lt;/b&gt;" id="ZhNegsUgQYoRMtf_w5oP-37">
+          <mxCell parent="ZhNegsUgQYoRMtf_w5oP-1" style="text;html=1;fillColor=none;strokeColor=none;fontSize=12;fontColor=#666666;align=center;verticalAlign=middle;whiteSpace=nowrap;" vertex="1">
+            <mxGeometry height="20" width="157" x="737" y="521" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
